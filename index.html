@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16 (Homework)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			Я шапка
+		</header>
+		<main class="main">
+			<div class="appointment">
+				<div class="appointment__container">
+					<h3 class="appointment__header">Make an appointment</h3>
+					<form enctype="text/plain" class="appointment__form form" action="#">
+						<div class="form__items">
+							<div class="form__item">
+								<input class="form__input" type="text" required value="" name="username" placeholder="Name"
+									autocomplete="off">
+							</div>
+							<div class="form__item">
+								<input class="form__input" type="email" required value="" name="email" placeholder="Email"
+									autocomplete="off">
+							</div>
+							<div class="form__item">
+								<input class="form__input" type="tel" required value="" name="phone" placeholder="Phone Number"
+									autocomplete="off">
+							</div>
+							<div class="form__item">
+								<select class="form__select" name="select">
+									<option name="option" value="" class="form__option">Service 1</option>
+									<option name="option" value="" class="form__option">Service 2</option>
+									<option name="option" value="" class="form__option">Service 3</option>
+									<option name="option" value="" class="form__option">Service 4</option>
+								</select>
+							</div>
+							<div class="form__item">
+								<textarea class="form__textarea" name="textarea"
+									placeholder="Tell us about your puppers include his/her name"></textarea>
+							</div>
+						</div>
+						<div class="form__buttons">
+							<button class="button" type="submit">Make an Appointment</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<div class="summary__body">
+						<div class="summary__head">
+							<h2 class="summary__title">Summary</h2>
+							<h3 class="summary__subtitle">Estimate Shipping and Tax</h3>
+							<div class="summary__sublabel">Enter your destination to get a shipping estimate.</div>
+						</div>
+						<form class="summary__about about">
+							<div class="about__items">
+								<div class="about__item">
+									<label class="about__label labels" for="select-1">Country</label>
+									<select id="select-1" class="about__select" name="select">
+										<option name="Canada" value="Canada" class="about__option">Canada</option>
+										<option selected name="Australia" value="Australia" class="about__option">Australia
+										</option>
+										<option name="Konoha" value="Naruto" class="about__option">Konoha</option>
+										<option name="PaRussia" value="Параша" class="about__option">Параша</option>
+									</select>
+								</div>
+								<div class="about__item">
+									<label class="about__label labels" for="input-1">State/Province</label>
+									<input id="input-1" class="about__input" type="text" required value="" name="State"
+										autocomplete="off">
+								</div>
+								<div class="about__item">
+									<label class="about__label labels" for="input-2">Zip/Postal Code</label>
+									<input id="input-2" class="about__input" type="number" required value="" name="Zip"
+										autocomplete="off">
+								</div>
+							</div>
+							<div class="summary__radiobuttons radiobuttons ">
+								<div class="radiobuttons__items">
+									<h4 class="radiobuttons__title labels">Standard Rate</h4>
+									<div class="radiobuttons__item">
+										<input id="radiobuttons-1" required type="radio" name="rate" class="radiobuttons__input">
+										<label class="radiobuttons__label" for="radiobuttons-1">Price may vary depending on the
+											item/destination. Shop Staff will contact you. $21.00</label>
+									</div>
+									<h4 class="radiobuttons__title labels">Pickup from store</h4>
+									<div class="radiobuttons__item">
+										<input id="radio-2" type="radio" name="rate" class="radiobuttons__input">
+										<label class="radiobuttons__label" for="radio-2">1234 Street Adress City Address,
+											1234 $0.00</label>
+									</div>
+								</div>
+							</div>
+							<div class="summary__discount discount">
+								<h3 class="discount__subtitle">Apply Discount Code</h3>
+								<div class="discount__item">
+									<label class="about__label labels" for="discount-1">Enter discount code</label>
+									<input id="discount-1" class="discount__input" type="text" placeholder="Enter Discount code"
+										value="" name="discount" autocomplete="off">
+								</div>
+								<button type="submit" class="discount__button">Apply Discount</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			Я подвал
+		</footer>
+	</div>
+</body>
+
+</html>
